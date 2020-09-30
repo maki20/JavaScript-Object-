@@ -1,12 +1,14 @@
 'use strict';
 
 {
-  const scores = [80,90,40,70];
-  scores.splice(1,1,40,50);
+  const point = {
+   x: 100,
+   y: 180,
+  };
 
-  for(let i = 0; i < scores.length; i++){
-      console.log(`Score ${i}: ${scores[i]}`);
-  }
+  point.x = 80;
+  point['x'] = 80;
 
-
+  console.log(point.x);
+  console.log(point['y']); 
 }
